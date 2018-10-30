@@ -1,0 +1,277 @@
+body {
+	background: #eee;
+	font-size: 62.5%;
+}
+
+header {
+	background: black;
+	margin: 0px auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.headrow {
+	display: inline;
+	width: 100%;
+	height: 100px;
+    margin: 0 auto;
+}
+
+.headrow li {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 20px;
+	height: 80px;
+	line-height: 80px;
+}
+
+nav {
+	font-size: 1.2em;
+	margin: 0px auto;
+	width: 650px;
+	padding: 0px 0px 10px 0px;
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+}
+
+
+nav li {
+	display: inline;
+}
+
+nav a:link, nav a:active, nav a:visited {
+	color: #fff;
+	padding: 5px 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.6em;
+
+}
+
+nav a:hover {
+	color: #333;
+	background: #fff;
+	-webkit-animation-name: navfade;
+	-webkit-animation-duration: 3s;
+}
+
+@keyframes navfade{
+	0% {opacity: 0;}
+	25% {opacity: 2.5;}
+	50% {opacity: 5.0;}
+	75% {opacity: 7.5;}
+	100% {opacity: 1;}
+}
+
+.questions {
+	width: 90%;
+	margin: 0px auto;
+	background-color: white;
+	padding: 30px 30px 30px 30px;
+	margin-top: 30px;
+	text-align: left;
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 5s;
+}
+
+
+.blogtxt1, .blogtxt2 {
+	width: 90%;
+	margin: 0px auto;
+	background-color: white;
+	padding: 30px 30px 30px 30px;
+	margin-top: 30px;
+	text-align: left;
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 5s;
+}
+
+.blogtxt1 img{
+ width: 100%;
+}
+
+.blogtxt1 h2,h3{
+ text-align: center;
+}
+
+.blogtxt2 h2,h3{
+ text-align: center;
+}
+
+.blogtxt2 img{
+ width: 100%;
+}
+
+@keyframes fadein{
+	0% {opacity: 0;}
+	25% {opacity: 2.5;}
+	50% {opacity: 5.0;}
+	75% {opacity: 7.5;}
+	100% {opacity: 1;}
+}
+
+.questions img{
+	float: right;
+	width: 40%;
+	margin: 0px 0px 0px 70px;
+}
+
+.questions h1{
+	font-size: 3.0em;
+	margin-bottom: 50px;
+
+}
+
+.logo {
+	display: inline-block;
+	float: left;
+	vertical-align: top;
+    height: 120px;
+    width: auto;
+ 
+    margin-left: 20px;
+
+}
+
+.landing-main{
+	position: relative;
+	text-align: center;
+	color: white;
+	-webkit-animation-name: loadup;
+	-webkit-animation-duration: 5s;
+	opacity: 1;
+}
+
+@keyframes loadup{
+	0% {opacity: 0;}
+	25% {opacity: 2.5;}
+	50% {opacity: 5.0;}
+	75% {opacity: 7.5;}
+	100% {opacity: 1;}
+}
+
+.landing-main img{
+	width: 100%;
+}
+
+.featuretxt {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 4.0em;
+}
+
+.content {
+	width: 90%;
+	margin: 0px auto;
+	background-color: white;
+	padding: 30px 30px 30px 30px;
+	margin-top: 30px;
+	text-align: left;
+	-webkit-animation-name: fadein;
+	-webkit-animation-duration: 5s;
+}
+
+.content img{
+	width: 30%;
+	float: left;
+	margin: 0px 40px 40px 40px;
+	border-radius: 50%;
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1.6em;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.4em;
+
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.8em;
+}
+img {
+	width: 70%;
+}
+
+.translate {
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation-name: mover;
+    -webkit-animation-duration: 4s; 
+    -webkit-animation-iteration-count: infinite; 
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+    from {transform: translate(400px, 100px);}
+    to {transform: translate(700px, 150px);}
+}
+
+
+
+.skewy {
+	width: 30%;
+    background-image: url(animate2.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    -webkit-animation-name: skewer;
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite; 
+    animation-name: skewer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skewer {
+    from {transform: skewY(0deg);}
+    to {transform: skewY(-40deg);}
+}
+
+
+.rotatex {
+    
+    width: 30%;
+    margin-top: 150px;
+    margin-bottom: 20px;
+    background-image: url(animate3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-animation-name: transformer; 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count: infinite;
+    animation-name: transformer;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes transformer {
+    from {transform: rotateX(0deg);}
+    to {transform: rotateX(360deg);}
+}
+
+footer {
+	background: black;
+	margin: 0px auto;
+	height: auto;
+	overflow: hidden;
+	text-align: center;
+	margin-top: 30px;
+	clear: both;
+}
+
+footer p {
+	color: white;
+}
